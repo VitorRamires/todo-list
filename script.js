@@ -25,10 +25,9 @@ function adicionarTarefa(){
     //botao remover
     var botaoRemover = document.createElement('button')
     botaoRemover.setAttribute('href', 'remover')
-    botaoRemover.textContent = "Remover"
     acoes.appendChild(botaoRemover)
     botaoRemover.onclick = function(){
-        criarItem.removeChild(botaoRemover)
+        criarItem.removeChild(acoes)
         criarList.removeChild(criarItem)
     }
 
