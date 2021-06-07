@@ -12,7 +12,9 @@
 <body>
 
     <div class="header">
-        <div class="overflow"></div>
+        <div class="overflow">
+            <h2 id = "tarefa-atual">Tarefa atual</h2>
+        </div>
     </div>
 
 <div class="todo-list">
@@ -26,10 +28,20 @@
             <!--tarefas aqui-->
         </ul>
     </div><!--painel-tarefas-->
+
+    
+    
 </div>
 
-<div class="contagem">
-    
+
+<div class="situação">
+    <div class="Adicionados">
+        <p>Ativas: <span id="ativas"></span></p>
+    </div>
+
+    <div class="completos">
+        <p>Completas: <span id= completas></span></p>
+    </div>
 </div>
 
 <script src="script.js"></script>
