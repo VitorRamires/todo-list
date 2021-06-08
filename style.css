@@ -162,14 +162,4 @@ li button:hover{
 }
 
 
-#check{
-    display: none;
-}
-
-.check-label{
-    width: 30px;
-    height: 30px;
-    background:#ccc;
-    border-radius: 50%;
-}
 
