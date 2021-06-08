@@ -44,6 +44,7 @@ function adicionarTarefa(){
         criarList.removeChild(criarItem)
         countAdd --
         contagemAdd.textContent = countAdd
+
     }
     
 

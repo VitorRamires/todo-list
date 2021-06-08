@@ -147,7 +147,7 @@ li button:hover{
     height: 50px;
     background:#552875;
     border-top:1px solid #ccc;
-    text-align: center;
+    text-align: left;
     display: flex;
     align-items: center;
     box-shadow: -1px 30px 15px -2px rgba(0,0,0,0.3);
