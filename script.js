@@ -54,12 +54,12 @@ function adicionarTarefa(){
     botaoChecar.onclick = function(){
         if(!botaoChecar.checked){
                 criarItem.style.textDecoration = "none"
-                criarItem.style.color = "white"
+                criarItem.style.color = "black"
                 countCheck --
                 contagemCheck.textContent = countCheck
             } else {
                 criarItem.style.textDecoration = "line-through"
-                criarItem.style.color = "#c3c1c1"
+                criarItem.style.color = "#adabab"
                 countCheck ++
             }
             contagemCheck.textContent = countCheck
