@@ -13,7 +13,6 @@ buttonAdicionar.addEventListener('click',adicionarTarefa)
 
 function adicionarTarefa(){
     
-    
     if(inputTodo.value !== ""){
         var criarItem = document.createElement('li')
         var acoes = document.createElement('div')
@@ -69,8 +68,6 @@ function adicionarTarefa(){
     inputTodo.value = ""
   
 
-
- 
 }
 
 
