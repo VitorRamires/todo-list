@@ -37,7 +37,7 @@ function adicionarTarefa(){
     //botao remover
     var botaoRemover = document.createElement('button')
     botaoRemover.setAttribute('href', 'remover')
-    
+  
     acoes.appendChild(botaoRemover)
     botaoRemover.onclick = function(){
         criarItem.removeChild(acoes)
@@ -46,20 +46,31 @@ function adicionarTarefa(){
         contagemAdd.textContent = countAdd
     }
     
+
     //botao Checar
+    var labelChecar = document.createElement('label')
     var botaoChecar = document.createElement('input')
     botaoChecar.setAttribute('type', 'checkbox')
+    botaoChecar.setAttribute('id', 'check')
+
+    labelChecar.setAttribute('class','check-label')
+    labelChecar.setAttribute('for','check')
     
     acoes.appendChild(botaoChecar)
+    acoes.appendChild(labelChecar)
+  
+
     botaoChecar.onclick = function(){
         if(!botaoChecar.checked){
-                criarItem.style.textDecoration = "none"
-                criarItem.style.color = "black"
-                countCheck --
-                contagemCheck.textContent = countCheck
-            } else {
-                criarItem.style.textDecoration = "line-through"
+            criarItem.style.textDecoration = "none"
+            criarItem.style.color = "black"
+            countCheck --
+            contagemCheck.textContent = countCheck
+            labelChecar.style.background = "#ccc"
+        } else {
+            criarItem.style.textDecoration = "line-through"
                 criarItem.style.color = "#adabab"
+                labelChecar.style.background = "red"
                 countCheck ++
             }
             contagemCheck.textContent = countCheck

@@ -67,7 +67,7 @@ h2{
     width: 30%;
     height: 100%;
     border:0;
-    background:#ab4eee;
+    background:#e2bd55;
     border-radius: 0 5px 0 0;
     color:white;
     cursor: pointer;
@@ -145,7 +145,7 @@ li button:hover{
     left:50%;
     transform: translate(-50%);
     height: 50px;
-    background:#843cb8;
+    background:#552875;
     border-top:1px solid #ccc;
     text-align: center;
     display: flex;
@@ -159,6 +159,17 @@ li button:hover{
     width: 50%;
     padding-left: 15px;
     color:rgba(255, 255, 255, 0.568);
-    
-
 }
+
+
+#check{
+    display: none;
+}
+
+.check-label{
+    width: 30px;
+    height: 30px;
+    background:#ccc;
+    border-radius: 50%;
+}
+
