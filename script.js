@@ -2,7 +2,6 @@ var inputTodo = document.getElementById('input-todo')
 var painelTarefas = document.getElementById('painel-tarefas')
 var buttonAdicionar = document.querySelector('.adicionar')
 var criarList = document.getElementById('lista-tarefas')
-var itemArray = []
 var countAdd = 0
 var countCheck = 0
 var contagemAdd = document.getElementById('ativas')
@@ -19,13 +18,13 @@ function adicionarTarefa(){
         acoes.setAttribute('class', 'acoes')
         criarItem.setAttribute('class','lista-item')
         
-        criarItem.textContent = inputTodo.value
+    
+        criarItem.textContent += inputTodo.value
         
         criarItem.appendChild(acoes)
         painelTarefas.appendChild(criarList)
         criarList.appendChild(criarItem)
         
-        itemArray.unshift(inputTodo.value)
         
         countAdd ++
         contagemAdd.textContent = countAdd
@@ -49,7 +48,6 @@ function adicionarTarefa(){
     
 
     //botao Checar
-    var labelChecar = document.createElement('label')
     var botaoChecar = document.createElement('input')
     botaoChecar.setAttribute('type', 'checkbox')
     botaoChecar.setAttribute('id', 'check')
