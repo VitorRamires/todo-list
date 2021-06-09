@@ -4,6 +4,7 @@ var buttonAdicionar = document.querySelector('.adicionar')
 var criarList = document.getElementById('lista-tarefas')
 var countAdd = 0
 var countCheck = 0
+var itemArray = []
 var contagemAdd = document.getElementById('ativas')
 var contagemCheck = document.getElementById('completas')
 
@@ -18,9 +19,12 @@ function adicionarTarefa(){
         acoes.setAttribute('class', 'acoes')
         criarItem.setAttribute('class','lista-item')
         
-    
+        itemArray.unshift(criarItem)
         criarItem.textContent += inputTodo.value
-        
+
+
+        criarItem.classList.add("animation")
+  
         criarItem.appendChild(acoes)
         painelTarefas.appendChild(criarList)
         criarList.appendChild(criarItem)

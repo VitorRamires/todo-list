@@ -10,6 +10,14 @@ html,body{
     background:linear-gradient(90deg,#e2bd55,#ab1af3);
 }
 
+.animation{
+    opacity: 1;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+    animation: animacao 1s 1;
+}
+
 .todo-list{
     width: 430px;
     height: 560px;
@@ -193,5 +201,21 @@ li button:hover{
     .Adicionados,.completos{
         margin-top:10px;
 
+    }
+}
+
+
+@keyframes animacao{
+    
+    from{
+        opacity: 0;
+        left: 50%;
+        transition: 0.5s;
+    }
+
+    to{
+        opacity: 1;
+        left: 0;
+        transition: 0.5s
     }
 }
